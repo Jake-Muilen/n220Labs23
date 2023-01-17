@@ -1,4 +1,3 @@
-let button;
 function setup() {
     createCanvas(800,600);
     background(50,50, 50);
