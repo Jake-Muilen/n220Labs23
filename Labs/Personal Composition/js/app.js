@@ -2,6 +2,12 @@ let button;
 function setup() {
     createCanvas(800,600);
     background(50,50, 50);
+    fill(255,255,255);
+    textAlign(CENTER);
+    textSize(32);
+text('Type Audi', 400, 500);
+text('Spacebar to Reset', 400, 540);
+fill(0, 102, 153);
     strokeWeight(40);
     noFill();
     circle(210, 300, 200);
@@ -15,6 +21,7 @@ function setup() {
     circle(335, 300, 200);
     circle(460, 300, 200);
     circle(585, 300, 200);
+    
 }
 function keyPressed() {
     if (keyCode === 65) {
@@ -22,6 +29,7 @@ function keyPressed() {
         noFill();
         stroke(255,255,255);
         circle(210, 300, 200);
+        
         
     } else if (keyCode === 85) {
         strokeWeight(10);
