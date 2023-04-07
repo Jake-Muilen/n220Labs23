@@ -56,7 +56,7 @@ CPU();
         console.log("tie");
     }
  }
- if(choice=='Scissors'){
+ if(choice=="Scissors"){
     if(cpuRoll=="Paper"){
         score=score+1;
         console.log("win");
