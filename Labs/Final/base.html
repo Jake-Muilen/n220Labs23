@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+                font-size: large;
+            }
+            
+            #board {
+                width: 600px;
+                height: 600px;
+                background-color: black;
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto
+            }
+
+            .square{
+                display: flex;
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                border: 3px black;
+                box-sizing: border-box;
+                border-style: solid;
+            }
+
+            .circle{
+                margin: auto;
+                border-radius: 120px;
+                height: 120px;
+                width: 120px;
+                border: 7px solid rgb(0, 0, 0);
+            }
+
+            .cross {
+            width: 7px;
+            height: 120px;
+            margin: auto;
+            border-radius: 120px;
+            background-color: black;
+            rotate: 45deg;
+            }
+            .cross:before {
+            content: '';
+            position: absolute;
+            width: 7px;
+            height: 120px;
+            margin: auto;
+            border-radius: 120px;
+            background-color: black;
+            rotate: 90deg;
+            }
+
+  </style>
+        </head>
+    <body>
+        <h1> Tic-Tac-Toe </h1>
+        <br>
+        <div id="board"></div>
+       
+        <p id="display"></p>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
